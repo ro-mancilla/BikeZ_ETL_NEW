@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36324.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "BikeZ_ETL", "BikeZ_ETL.dtproj", "{70199E41-BC65-48DF-B3B5-D7406F24078A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70199E41-BC65-48DF-B3B5-D7406F24078A}.Development|Default.ActiveCfg = Development
+		{70199E41-BC65-48DF-B3B5-D7406F24078A}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C8100C8-103B-4C50-AF3B-3881E7AB7C1C}
+	EndGlobalSection
+EndGlobal

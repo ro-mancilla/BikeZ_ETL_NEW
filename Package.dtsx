@@ -1,0 +1,2807 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/17/2025 3:44:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VIAWSE02LC1220"
+  DTS:CreatorName="DUOCACAD\vina"
+  DTS:DTSID="{4DF8C5E9-686B-41E5-9D2C-A9CBDC219160}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.521.0"
+  DTS:LocaleID="13322"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{BA9604D4-8AC6-4576-86E0-651DA6DC50E4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E264F789-5AF4-434C-93B3-52131A0464B4}"
+      DTS:ObjectName="localhost.BikeZ_DB.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcsO9jQG5+kTuYa1yZMzME+C2IIepWF8Q5cN068iNAlwAAAAAOgAAAAAIAACAAAAAstPO3I9n4Yd0abn3dfbDYRmyTFIXijalhGM08GpQDKhAAAABFWoSFCeV2L4w1NZZJcWrBQAAAAMt0Hh2BnopeogNxcVeZcl0Mf0JWyKewBdyhygjldM1PvT+fyK4dca0IqLGnRil8/zaLvJURYUpD+7pxYF4VLbY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{682196B6-6EAC-4F47-B8F2-7BB2EE9674B7}"
+      DTS:ObjectName="localhost.BikeZ_DW.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+QaWr+LyfyfUhUTzlOAGxLpj86+80iT2U3RAPRewuHwAAAAAOgAAAAAIAACAAAAANH352QUyahoYrZrEHxrq+2y9WW0r7UmXJNPSTs38t9xAAAABMz7gFXLPug9qEE7OvsYNhQAAAABiOjOhN9WefenAVnnZEGgu1Gag3hjt7bTjA6+Wkg+4coJR772TmHx6MWoRCckE3GaDRzoh5Hgy4c9rnoQhn4l4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Crear DW"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{61C332E2-C47A-469D-A7D7-671A26B1BCE5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Crear DW"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Dimensión &quot;DIMCliente&quot;"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{F80C872C-2894-4E07-AAD8-EEA30C86C111}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dimensión &quot;DIMCliente&quot;">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMCliente&quot;\Limpiar &quot;DIMCliente&quot;"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{26876CE0-4DB8-4A93-827D-30AEF5A8D3D1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Limpiar &quot;DIMCliente&quot;"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{207ABEF6-E402-4F86-982A-D857E35A1456}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Poblar &quot;DIMCliente&quot;"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Cargar &quot;Clientes&quot;"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Clientes]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[ClienteID]"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]"
+                          name="ClienteID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]"
+                          name="Nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]"
+                          name="Apellido"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]"
+                          name="Sexo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          length="10"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          name="EstadoCivil"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[ClienteID]"
+                          dataType="i4"
+                          name="ClienteID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                          dataType="wstr"
+                          length="50"
+                          name="Nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                          dataType="wstr"
+                          length="50"
+                          name="Apellido" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                          dataType="wstr"
+                          length="1"
+                          name="Sexo" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          dataType="wstr"
+                          length="10"
+                          name="EstadoCivil" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ClienteID]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ClienteID]"
+                          name="ClienteID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                          name="Nombre" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                          name="Apellido" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                          dataType="wstr"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                          name="Sexo" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          name="EstadoCivil" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Enviar a &quot;DIMCliente&quot;"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DIMCliente]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[clientekey]"
+                          dataType="i4"
+                          name="clientekey" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[cliente_id]"
+                          dataType="i4"
+                          name="cliente_id" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[cliente_nombre]"
+                          dataType="wstr"
+                          length="255"
+                          name="cliente_nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[cliente_sexo]"
+                          dataType="wstr"
+                          length="1"
+                          name="cliente_sexo" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[cliente_estado_civil]"
+                          dataType="wstr"
+                          length="10"
+                          name="cliente_estado_civil" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[fecha_ini]"
+                          dataType="dbDate"
+                          name="fecha_ini" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input].ExternalColumns[fecha_fin]"
+                          dataType="dbDate"
+                          name="fecha_fin" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Transformar Tablas"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[ClienteID]"
+                          cachedDataType="i4"
+                          cachedName="ClienteID"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Nombre]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Nombre"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Apellido]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Apellido"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Sexo]"
+                          cachedDataType="wstr"
+                          cachedLength="1"
+                          cachedName="Sexo"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[EstadoCivil]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="EstadoCivil"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_id]"
+                          name="cliente_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMCliente"\Poblar "DIMCliente"\Cargar "Clientes".Outputs[OLE DB Source Output].Columns[ClienteID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">ClienteID</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="102"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_nombre]"
+                          name="cliente_nombre"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMCliente"\Poblar "DIMCliente"\Cargar "Clientes".Outputs[OLE DB Source Output].Columns[Nombre]} + ", " + #{Package\Dimensión "DIMCliente"\Poblar "DIMCliente"\Cargar "Clientes".Outputs[OLE DB Source Output].Columns[Apellido]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Nombre + ", " + Apellido</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_sexo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_sexo]"
+                          name="cliente_sexo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMCliente"\Poblar "DIMCliente"\Cargar "Clientes".Outputs[OLE DB Source Output].Columns[Sexo]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Sexo</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_estado_civil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="10"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[cliente_estado_civil]"
+                          name="cliente_estado_civil"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMCliente"\Poblar "DIMCliente"\Cargar "Clientes".Outputs[OLE DB Source Output].Columns[EstadoCivil]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">EstadoCivil</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          name="fecha_ini"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2000-01-01"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2000-01-01"</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          name="fecha_fin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2099-12-31"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2099-12-31"</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;.Paths[Derived Column Output]"
+                  endId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;.Paths[OLE DB Source Output]"
+                  endId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Dimensión &quot;DIMCliente&quot;.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{6A65C989-8BB6-4309-8556-3A11479F661C}"
+          DTS:From="Package\Dimensión &quot;DIMCliente&quot;\Limpiar &quot;DIMCliente&quot;"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Dimensión &quot;DIMEmpleado&quot;"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{18595D57-59E0-4ED9-9DE6-8211061DD81E}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dimensión &quot;DIMEmpleado&quot;">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMEmpleado&quot;\Limpiar &quot;DIMEmpleado&quot;"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{9241BF95-52D3-45D2-9849-62A91FAECF71}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Limpiar &quot;DIMEmpleado&quot;"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{FBB1128F-88CD-455A-BECA-9D67202142C6}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Poblar &quot;DIMEmpleado&quot;"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Cargar &quot;Empleados&quot;"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Empleados]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          length="10"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          name="EstadoCivil"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EmpleadoID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[EmpleadoID]"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EmpleadoID]"
+                          name="EmpleadoID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Cargo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[Cargo]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Cargo]"
+                          name="Cargo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                          name="FechaNacimiento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Genero]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[Genero]"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Genero]"
+                          name="Genero"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaContratacion]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[FechaContratacion]"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaContratacion]"
+                          name="FechaContratacion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[HorasVacaciones]"
+                          dataType="i2"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[HorasVacaciones]"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[HorasVacaciones]"
+                          name="HorasVacaciones"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[TerritorioID]"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]"
+                          name="TerritorioID"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          dataType="wstr"
+                          length="1"
+                          name="EstadoCivil" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[EmpleadoID]"
+                          dataType="i4"
+                          name="EmpleadoID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[Cargo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Cargo" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                          dataType="dbDate"
+                          name="FechaNacimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[Genero]"
+                          dataType="wstr"
+                          length="1"
+                          name="Genero" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[FechaContratacion]"
+                          dataType="dbDate"
+                          name="FechaContratacion" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[HorasVacaciones]"
+                          dataType="i2"
+                          name="HorasVacaciones" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].ExternalColumns[TerritorioID]"
+                          dataType="i4"
+                          name="TerritorioID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[EmpleadoID]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[EmpleadoID]"
+                          name="EmpleadoID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[Cargo]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[Cargo]"
+                          name="Cargo" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                          dataType="dbDate"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                          name="FechaNacimiento" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          name="EstadoCivil" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[Genero]"
+                          dataType="wstr"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[Genero]"
+                          name="Genero" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[FechaContratacion]"
+                          dataType="dbDate"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[FechaContratacion]"
+                          name="FechaContratacion" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[HorasVacaciones]"
+                          dataType="i2"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[HorasVacaciones]"
+                          name="HorasVacaciones" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[TerritorioID]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[TerritorioID]"
+                          name="TerritorioID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Transformar Tablas"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[EstadoCivil]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="EstadoCivil"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[EmpleadoID]"
+                          cachedDataType="i4"
+                          cachedName="EmpleadoID"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[EmpleadoID]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Cargo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Cargo"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Cargo]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[FechaNacimiento]"
+                          cachedDataType="dbDate"
+                          cachedName="FechaNacimiento"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaNacimiento]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Genero]"
+                          cachedDataType="wstr"
+                          cachedLength="1"
+                          cachedName="Genero"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[Genero]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[FechaContratacion]"
+                          cachedDataType="dbDate"
+                          cachedName="FechaContratacion"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[FechaContratacion]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[HorasVacaciones]"
+                          cachedDataType="i2"
+                          cachedName="HorasVacaciones"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output].Columns[HorasVacaciones]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_id]"
+                          name="empleado_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[EmpleadoID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">EmpleadoID</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_cargo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_cargo]"
+                          name="empleado_cargo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[Cargo]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Cargo</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_nacimiento]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_nacimiento]"
+                          name="empleado_nacimiento"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[FechaNacimiento]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">FechaNacimiento</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_estado_civil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="10"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_estado_civil]"
+                          name="empleado_estado_civil"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[EstadoCivil]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">EstadoCivil</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_sexo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="1"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_sexo]"
+                          name="empleado_sexo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[Genero]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Genero</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_contratacion]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_contratacion]"
+                          name="empleado_contratacion"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[FechaContratacion]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">FechaContratacion</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_horas_vacaciones]"
+                          dataType="i2"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_horas_vacaciones]"
+                          name="empleado_horas_vacaciones"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMEmpleado"\Poblar "DIMEmpleado"\Cargar "Empleados".Outputs[OLE DB Source Output].Columns[HorasVacaciones]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">HorasVacaciones</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_territorio]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[empleado_territorio]"
+                          name="empleado_territorio"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression"></property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression"></property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;.Paths[OLE DB Source Output]"
+                  endId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Dimensión &quot;DIMEmpleado&quot;.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{0B31F2A8-2766-4FC2-885F-5CCA9CE4DC3C}"
+          DTS:From="Package\Dimensión &quot;DIMEmpleado&quot;\Limpiar &quot;DIMEmpleado&quot;"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Dimensión &quot;DIMTerritorio&quot;"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{a630e84a-be28-474b-942f-7d4b6ba9ae93}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dimensión &quot;DIMTerritorio&quot;">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMTerritorio&quot;\Limpiar &quot;DIMTerritorio&quot;"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{b36eabe9-6d0a-423b-92b7-a9abd55160ca}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Limpiar &quot;DIMTerritorio&quot;"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{dd6b4975-19f7-4b8c-a7e7-c7c56fe85a2f}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Poblar &quot;DIMTerritorio&quot;"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Cargar &quot;Paises&quot;"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Paises]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[PaisID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].ExternalColumns[PaisID]"
+                          length="3"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[PaisID]"
+                          name="PaisID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[Pais]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].ExternalColumns[Pais]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[Pais]"
+                          name="Pais"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].ExternalColumns[PaisID]"
+                          dataType="wstr"
+                          length="3"
+                          name="PaisID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].ExternalColumns[Pais]"
+                          dataType="wstr"
+                          length="50"
+                          name="Pais" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[PaisID]"
+                          dataType="wstr"
+                          length="3"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[PaisID]"
+                          name="PaisID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[Pais]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[Pais]"
+                          name="Pais" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Cargar &quot;Territorios&quot;"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Territorios]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DB.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[TerritorioID]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]"
+                          name="TerritorioID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Territorio]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[Territorio]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Territorio]"
+                          name="Territorio"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[PaisID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[PaisID]"
+                          length="3"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[PaisID]"
+                          name="PaisID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Grupo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[Grupo]"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Grupo]"
+                          name="Grupo"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[TerritorioID]"
+                          dataType="i4"
+                          name="TerritorioID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[Territorio]"
+                          dataType="wstr"
+                          length="50"
+                          name="Territorio" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[PaisID]"
+                          dataType="wstr"
+                          length="3"
+                          name="PaisID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].ExternalColumns[Grupo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Grupo" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[TerritorioID]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[TerritorioID]"
+                          name="TerritorioID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[Territorio]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[Territorio]"
+                          name="Territorio" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[PaisID]"
+                          dataType="wstr"
+                          length="3"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[PaisID]"
+                          name="PaisID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[Grupo]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[Grupo]"
+                          name="Grupo" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DIMTerritorio]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_id]"
+                          cachedDataType="i4"
+                          cachedName="territorio_id"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_nombre]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_nombre"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_grupo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_grupo"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_pais]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_pais"
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territoriokey]"
+                          dataType="i4"
+                          name="territoriokey" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
+                          dataType="i4"
+                          name="territorio_id" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
+                          dataType="wstr"
+                          length="255"
+                          name="territorio_nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
+                          dataType="wstr"
+                          length="255"
+                          name="territorio_grupo" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
+                          dataType="wstr"
+                          length="50"
+                          name="territorio_pais" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_ini]"
+                          dataType="dbDate"
+                          name="fecha_ini" />
+                        <externalMetadataColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_fin]"
+                          dataType="dbDate"
+                          name="fecha_fin" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Transformar Columna &quot;Pais&quot;"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Inputs[Derived Column Input].Columns[Pais]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Pais"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[Pais]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output].Columns[territorio_pais]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output].Columns[territorio_pais]"
+                          name="territorio_pais"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Cargar "Paises".Outputs[OLE DB Source Output].Columns[Pais]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Pais</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Transformar Tablas"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[TerritorioID]"
+                          cachedDataType="i4"
+                          cachedName="TerritorioID"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Territorio]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Territorio"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Territorio]" />
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input].Columns[Grupo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Grupo"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Grupo]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_id]"
+                          name="territorio_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Cargar "Territorios".Outputs[OLE DB Source Output].Columns[TerritorioID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">TerritorioID</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_nombre]"
+                          name="territorio_nombre"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Cargar "Territorios".Outputs[OLE DB Source Output].Columns[Territorio]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Territorio</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_grupo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_grupo]"
+                          name="territorio_grupo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Cargar "Territorios".Outputs[OLE DB Source Output].Columns[Grupo]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Grupo</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          name="fecha_ini"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2000-01-01"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2000-01-01"</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          name="fecha_fin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2099-12-31"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2099-12-31"</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All"
+                  componentClassID="Microsoft.UnionAll"
+                  contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+                  name="Union All"
+                  version="1">
+                  <inputs>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2]"
+                      hasSideEffects="true"
+                      name="Union All Input 2">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2].Columns[PaisID]"
+                          cachedDataType="wstr"
+                          cachedLength="3"
+                          cachedName="PaisID"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output].Columns[PaisID]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[PaisID]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2].Columns[territorio_pais]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_pais"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output].Columns[territorio_pais]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_pais]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3]"
+                      hasSideEffects="true"
+                      name="Union All Input 3">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[TerritorioID]"
+                          cachedDataType="i4"
+                          cachedName="TerritorioID"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[TerritorioID]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[Territorio]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Territorio"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Territorio]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[Territorio]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[PaisID]"
+                          cachedDataType="wstr"
+                          cachedLength="3"
+                          cachedName="PaisID"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[PaisID]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[PaisID]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[Grupo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Grupo"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[Grupo]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[Grupo]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_id]"
+                          cachedDataType="i4"
+                          cachedName="territorio_id"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_id]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_id]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_nombre]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_nombre"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_nombre]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_grupo]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="territorio_grupo"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_grupo]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Output column lineage ID"
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                    <input
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 1]"
+                      dangling="true"
+                      hasSideEffects="true"
+                      name="Union All Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1]"
+                      name="Union All Output 1">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[TerritorioID]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[TerritorioID]"
+                          name="TerritorioID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Territorio]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Territorio]"
+                          name="Territorio" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[PaisID]"
+                          dataType="wstr"
+                          length="3"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[PaisID]"
+                          name="PaisID" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Grupo]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Grupo]"
+                          name="Grupo" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]"
+                          dataType="i4"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]"
+                          name="territorio_id" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]"
+                          name="territorio_nombre" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]"
+                          name="territorio_grupo" />
+                        <outputColumn
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]"
+                          name="territorio_pais" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2]"
+                  name="Derived Column Output"
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output1]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3]"
+                  name="Derived Column Output"
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[OLE DB Source Output]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[OLE DB Source Output1]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Union All Output 1]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Union All Output 1"
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Dimensión &quot;DIMTerritorio&quot;.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{027eb12c-ef32-49ae-8a12-cd1e1c579fff}"
+          DTS:From="Package\Dimensión &quot;DIMTerritorio&quot;\Limpiar &quot;DIMTerritorio&quot;"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{1E66DD25-41F8-4658-9CF9-1C084C57FC69}"
+      DTS:From="Package\Crear DW"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Dimensión &quot;DIMCliente&quot;" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{00267EDF-0AF2-401E-A13C-254270571005}"
+      DTS:From="Package\Dimensión &quot;DIMCliente&quot;"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Dimensión &quot;DIMTerritorio&quot;" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Crear DW"
+          TopLeft="404,196" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;"
+          TopLeft="59,153" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Limpiar &quot;DIMCliente&quot;"
+          TopLeft="49,27" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMCliente&quot;.PrecedenceConstraints[Constraint]"
+          TopLeft="143.5,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84"
+              Start="0,0"
+              End="0,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="289,247"
+          Size="289,290"
+          Id="Package\Dimensión &quot;DIMCliente&quot;"
+          TopLeft="343,292" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="485.75,238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;\Limpiar &quot;DIMEmpleado&quot;"
+          TopLeft="46,24" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;"
+          TopLeft="53,150" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;.PrecedenceConstraints[Constraint]"
+          TopLeft="143.75,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84"
+              Start="0,0"
+              End="0,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="280,249"
+          Size="280,292"
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;"
+          TopLeft="982,292" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Limpiar &quot;DIMTerritorio&quot;"
+          TopLeft="46,24" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;"
+          TopLeft="49,151" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;.PrecedenceConstraints[Constraint]"
+          TopLeft="141.75,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="280,249"
+          Size="280,292"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;"
+          TopLeft="675,292" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="632,437.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43,0"
+              Start="0,0"
+              End="35.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="35.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;"
+          TopLeft="438,165" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;"
+          TopLeft="426,383" />
+        <NodeLayout
+          Size="174,47"
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Transformar Tablas"
+          TopLeft="438,263" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;.Paths[OLE DB Source Output]"
+          TopLeft="525.25,207">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;.Paths[Derived Column Output]"
+          TopLeft="525.25,310">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Cargar &quot;Clientes&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMCliente&quot;\Poblar &quot;DIMCliente&quot;\Enviar a &quot;DIMCliente&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;"
+          TopLeft="486,155" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Transformar Tablas"
+          TopLeft="495,272" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;.Paths[OLE DB Source Output]"
+          TopLeft="580,197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75"
+              Start="0,0"
+              End="0,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMEmpleado&quot;\Poblar &quot;DIMEmpleado&quot;\Cargar &quot;Empleados&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;"
+          TopLeft="474,318" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;"
+          TopLeft="707,316" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;"
+          TopLeft="675,412" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[OLE DB Source Output]"
+          TopLeft="781.5,358">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination"
+          TopLeft="576,605" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All"
+          TopLeft="603,515" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output]"
+          TopLeft="781,454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-98.6666666666666,61"
+              Start="0,0"
+              End="-98.6666666666666,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.1223491027733" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.1223491027733"
+                    Point2="0,36.1223491027733"
+                    Point3="-4,36.1223491027733" />
+                  <mssgle:LineSegment
+                    End="-94.6666666666666,36.1223491027733" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-94.6666666666666,36.1223491027733"
+                    Point2="-98.6666666666666,36.1223491027733"
+                    Point3="-98.6666666666666,40.1223491027733" />
+                  <mssgle:LineSegment
+                    End="-98.6666666666666,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas"
+          TopLeft="469,414" />
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[OLE DB Source Output1]"
+          TopLeft="553.5,360">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output1]"
+          TopLeft="554.5,456">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.1666666666666,59"
+              Start="0,0"
+              End="90.1666666666666,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.9380097879282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.9380097879282"
+                    Point2="0,34.9380097879282"
+                    Point3="4,34.9380097879282" />
+                  <mssgle:LineSegment
+                    End="86.1666666666666,34.9380097879282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86.1666666666666,34.9380097879282"
+                    Point2="90.1666666666666,34.9380097879282"
+                    Point3="90.1666666666666,38.9380097879282" />
+                  <mssgle:LineSegment
+                    End="90.1666666666666,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Union All Output 1]"
+          TopLeft="662.5,557">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Paises&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
