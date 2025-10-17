@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{BA9604D4-8AC6-4576-86E0-651DA6DC50E4}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{CA0D23F8-6327-48F4-8D9D-BDDFDEBD7107}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcsO9jQG5+kTuYa1yZMzME+C2IIepWF8Q5cN068iNAlwAAAAAOgAAAAAIAACAAAAAstPO3I9n4Yd0abn3dfbDYRmyTFIXijalhGM08GpQDKhAAAABFWoSFCeV2L4w1NZZJcWrBQAAAAMt0Hh2BnopeogNxcVeZcl0Mf0JWyKewBdyhygjldM1PvT+fyK4dca0IqLGnRil8/zaLvJURYUpD+7pxYF4VLbY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0XZfBQjDQMSbLesHYBXRhJzPl1z6xRyi5Y+F3E7+j/QAAAAAOgAAAAAIAACAAAACK+xM/FQOYrq7LlGM+w6rMkSHCwT3fDqz/tnQRp6hOgBAAAACr4LHFA+OX5cgNYRbE5h9hQAAAAF9I4hggcahQGYxw0wSfyBhpdhPYuH8ZfwGzSkacz5nJgw0la/PGcsC/NQpjDWNWSfs5Rx/fQ7U9sLMC6FQBQWo</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+QaWr+LyfyfUhUTzlOAGxLpj86+80iT2U3RAPRewuHwAAAAAOgAAAAAIAACAAAAANH352QUyahoYrZrEHxrq+2y9WW0r7UmXJNPSTs38t9xAAAABMz7gFXLPug9qEE7OvsYNhQAAAABiOjOhN9WefenAVnnZEGgu1Gag3hjt7bTjA6+Wkg+4coJR772TmHx6MWoRCckE3GaDRzoh5Hgy4c9rnoQhn4l4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1vjAB9f0ZkWzVuK9RWq7WwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACADnZB+tusCsrMa4DKHPj2LUIY2lV93zSR1VcbknFOegAAAAAOgAAAAAIAACAAAAC7CkEjh4vbKy5RonUMaZmcmtrjTc4NYe1zKYXzv0kxRRAAAACUmGR0dVmPLaF35pZllpQKQAAAAMeUAQ0ukx/gvCX9BuYhuq2XSypraz4yxJw23/F4t7bzyU/O8kJ2zbuxyhuwfoAbPp2ty8EC7O4QPg7X8APyARM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1585,11 +1585,11 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination"
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
-                  name="OLE DB Destination"
+                  name="Enviar a &quot;DIMTerritorio&quot;"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -1642,7 +1642,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Connections[OleDbConnection]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
                       connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DW.sa]"
                       description="The OLE DB runtime connection used to access the database."
@@ -1650,71 +1650,71 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_id]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].Columns[territorio_id]"
                           cachedDataType="i4"
                           cachedName="territorio_id"
-                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]" />
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_id]" />
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_nombre]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].Columns[territorio_nombre]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_nombre"
-                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]" />
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_nombre]" />
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].Columns[territorio_grupo]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_grupo"
-                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]" />
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_grupo]" />
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[territorio_pais]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].Columns[territorio_pais]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_pais"
-                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]" />
+                          externalMetadataColumnId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_pais]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territoriokey]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territoriokey]"
                           dataType="i4"
                           name="territoriokey" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_id]"
                           dataType="i4"
                           name="territorio_id" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_nombre]"
                           dataType="wstr"
                           length="255"
                           name="territorio_nombre" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_grupo]"
                           dataType="wstr"
                           length="255"
                           name="territorio_grupo" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[territorio_pais]"
                           dataType="wstr"
                           length="50"
                           name="territorio_pais" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_ini]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[fecha_ini]"
                           dataType="dbDate"
                           name="fecha_ini" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_fin]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input].ExternalColumns[fecha_fin]"
                           dataType="dbDate"
                           name="fecha_fin" />
                       </externalMetadataColumns>
@@ -1722,22 +1722,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -2010,20 +2010,20 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All"
+                  refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes"
                   componentClassID="Microsoft.UnionAll"
                   contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-                  name="Union All"
+                  name="Unir origenes"
                   version="1">
                   <inputs>
                     <input
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 2]"
                       hasSideEffects="true"
                       name="Union All Input 2">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2].Columns[PaisID]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 2].Columns[PaisID]"
                           cachedDataType="wstr"
                           cachedLength="3"
                           cachedName="PaisID"
@@ -2033,11 +2033,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[PaisID]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[PaisID]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2].Columns[territorio_pais]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 2].Columns[territorio_pais]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_pais"
@@ -2047,19 +2047,19 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_pais]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[territorio_pais]}</property>
                           </properties>
                         </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
                     <input
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3]"
                       hasSideEffects="true"
                       name="Union All Input 3">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[TerritorioID]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[TerritorioID]"
                           cachedDataType="i4"
                           cachedName="TerritorioID"
                           lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output].Columns[TerritorioID]">
@@ -2068,11 +2068,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[TerritorioID]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[TerritorioID]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[Territorio]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[Territorio]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="Territorio"
@@ -2082,11 +2082,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[Territorio]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[Territorio]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[PaisID]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[PaisID]"
                           cachedDataType="wstr"
                           cachedLength="3"
                           cachedName="PaisID"
@@ -2096,11 +2096,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[PaisID]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[PaisID]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[Grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[Grupo]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="Grupo"
@@ -2110,11 +2110,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[Grupo]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[Grupo]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_id]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[territorio_id]"
                           cachedDataType="i4"
                           cachedName="territorio_id"
                           lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output].Columns[territorio_id]">
@@ -2123,11 +2123,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_id]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[territorio_id]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_nombre]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[territorio_nombre]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_nombre"
@@ -2137,11 +2137,11 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[territorio_nombre]}</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3].Columns[territorio_grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3].Columns[territorio_grupo]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="territorio_grupo"
@@ -2151,14 +2151,14 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]}</property>
+                              name="OutputColumnLineageID">#{Package\Dimensión "DIMTerritorio"\Poblar "DIMTerritorio"\Unir origenes.Outputs[Union All Output 1].Columns[territorio_grupo]}</property>
                           </properties>
                         </inputColumn>
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
                     <input
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 1]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 1]"
                       dangling="true"
                       hasSideEffects="true"
                       name="Union All Input 1">
@@ -2167,54 +2167,54 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1]"
+                      refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1]"
                       name="Union All Output 1">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[TerritorioID]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[TerritorioID]"
                           dataType="i4"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[TerritorioID]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[TerritorioID]"
                           name="TerritorioID" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Territorio]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[Territorio]"
                           dataType="wstr"
                           length="50"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Territorio]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[Territorio]"
                           name="Territorio" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[PaisID]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[PaisID]"
                           dataType="wstr"
                           length="3"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[PaisID]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[PaisID]"
                           name="PaisID" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[Grupo]"
                           dataType="wstr"
                           length="50"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[Grupo]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[Grupo]"
                           name="Grupo" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_id]"
                           dataType="i4"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_id]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_id]"
                           name="territorio_id" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_nombre]"
                           dataType="wstr"
                           length="50"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_nombre]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_nombre]"
                           name="territorio_nombre" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_grupo]"
                           dataType="wstr"
                           length="50"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_grupo]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_grupo]"
                           name="territorio_grupo" />
                         <outputColumn
-                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]"
+                          refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_pais]"
                           dataType="wstr"
                           length="50"
-                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1].Columns[territorio_pais]"
+                          lineageId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1].Columns[territorio_pais]"
                           name="territorio_pais" />
                       </outputColumns>
                       <externalMetadataColumns />
@@ -2225,12 +2225,12 @@
               <paths>
                 <path
                   refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output]"
-                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 2]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 2]"
                   name="Derived Column Output"
                   startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Columna &quot;Pais&quot;.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output1]"
-                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Inputs[Union All Input 3]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Inputs[Union All Input 3]"
                   name="Derived Column Output"
                   startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Transformar Tablas.Outputs[Derived Column Output]" />
                 <path
@@ -2245,9 +2245,9 @@
                   startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Cargar &quot;Territorios&quot;.Outputs[OLE DB Source Output]" />
                 <path
                   refId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Union All Output 1]"
-                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  endId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;.Inputs[OLE DB Destination Input]"
                   name="Union All Output 1"
-                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All.Outputs[Union All Output 1]" />
+                  startId="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes.Outputs[Union All Output 1]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -2638,39 +2638,39 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="171,42"
-          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination"
-          TopLeft="576,605" />
+          Size="191,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;"
+          TopLeft="559,609" />
         <NodeLayout
-          Size="121,42"
-          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Union All"
-          TopLeft="603,515" />
+          Size="141,42"
+          Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Unir origenes"
+          TopLeft="582,518" />
         <EdgeLayout
           Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Derived Column Output]"
           TopLeft="781,454">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-98.6666666666666,61"
+              EndConnector="-106.333333333333,64"
               Start="0,0"
-              End="-98.6666666666666,53.5">
+              End="-106.333333333333,56.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.1223491027733" />
+                    End="0,33.969144460028" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32.1223491027733"
-                    Point2="0,36.1223491027733"
-                    Point3="-4,36.1223491027733" />
+                    Point1="0,33.969144460028"
+                    Point2="0,37.969144460028"
+                    Point3="-4,37.969144460028" />
                   <mssgle:LineSegment
-                    End="-94.6666666666666,36.1223491027733" />
+                    End="-102.333333333333,37.969144460028" />
                   <mssgle:CubicBezierSegment
-                    Point1="-94.6666666666666,36.1223491027733"
-                    Point2="-98.6666666666666,36.1223491027733"
-                    Point3="-98.6666666666666,40.1223491027733" />
+                    Point1="-102.333333333333,37.969144460028"
+                    Point2="-106.333333333333,37.969144460028"
+                    Point3="-106.333333333333,41.969144460028" />
                   <mssgle:LineSegment
-                    End="-98.6666666666666,53.5" />
+                    End="-106.333333333333,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2711,26 +2711,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="90.1666666666666,59"
+              EndConnector="75.8333333333334,62"
               Start="0,0"
-              End="90.1666666666666,51.5">
+              End="75.8333333333334,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.9380097879282" />
+                    End="0,32.7826086956522" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.9380097879282"
-                    Point2="0,34.9380097879282"
-                    Point3="4,34.9380097879282" />
+                    Point1="0,32.7826086956522"
+                    Point2="0,36.7826086956522"
+                    Point3="4,36.7826086956522" />
                   <mssgle:LineSegment
-                    End="86.1666666666666,34.9380097879282" />
+                    End="71.8333333333334,36.7826086956522" />
                   <mssgle:CubicBezierSegment
-                    Point1="86.1666666666666,34.9380097879282"
-                    Point2="90.1666666666666,34.9380097879282"
-                    Point3="90.1666666666666,38.9380097879282" />
+                    Point1="71.8333333333334,36.7826086956522"
+                    Point2="75.8333333333334,36.7826086956522"
+                    Point3="75.8333333333334,40.7826086956522" />
                   <mssgle:LineSegment
-                    End="90.1666666666666,51.5" />
+                    End="75.8333333333334,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2741,18 +2741,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;.Paths[Union All Output 1]"
-          TopLeft="662.5,557">
+          TopLeft="653.5,560">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48"
+              EndConnector="0,49"
               Start="0,0"
-              End="0,40.5">
+              End="0,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.5" />
+                    End="0,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2791,7 +2791,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\OLE DB Destination">
+    design-time-name="Package\Dimensión &quot;DIMTerritorio&quot;\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
