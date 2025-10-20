@@ -1,7 +1,7 @@
 # BikeZ ETL Structure
 <img width="727" height="582" alt="image" src="https://github.com/user-attachments/assets/55fdc35f-e506-4c2c-b1cf-bb0b64ea8f64" />
 
-### SELECT DIMProducto:
+### SELECT DIMProducto
 <img width="644" height="382" alt="image" src="https://github.com/user-attachments/assets/985d8a37-7d85-44ae-a7e6-5f56ff6541a9" />
 
 ### SELECT DIMCliente
