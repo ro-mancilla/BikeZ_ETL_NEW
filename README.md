@@ -8,7 +8,7 @@
 <img width="583" height="376" alt="image" src="https://github.com/user-attachments/assets/8f533ebf-7cf8-4072-ada0-6f740c071752" />
 
 ### SELECT DIMEmpleado
-<img width="1313" height="376" alt="image" src="https://github.com/user-attachments/assets/599d3573-0d55-4b8a-8d6b-299469b64012" />
+<img width="1281" height="378" alt="image" src="https://github.com/user-attachments/assets/71dad78b-e96e-48af-805a-b28508250d52" />
 
 ### SELECT DIMTerritorio
 <img width="579" height="206" alt="image" src="https://github.com/user-attachments/assets/8cc76e1d-423a-4d43-a62d-6bbd2cf01798" />
