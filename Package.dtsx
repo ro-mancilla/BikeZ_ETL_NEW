@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="85"
-  DTS:VersionGUID="{DB6BDE62-38E1-4494-8143-752D60806922}">
+  DTS:VersionBuild="88"
+  DTS:VersionGUID="{B836E615-7EBF-4905-99CE-A09EC953753A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACsvHKRK3njXEUk8tHn7Cuf6jHN5BgmMf0BBpbwIcy5ZQAAAAAOgAAAAAIAACAAAABL9pugBL7koGuzsl+/RzJLe2E8zNaswIex3/dkDa/mhiAAAACOS8ClhsuWNm4/KjzS0eVSxzkDhU2Qs8tNo+xzPjO1aEAAAAC8lWxxOCq2G7jxOmjnMQew+qDXrxRhDPHQWBPfG1PNoohZ8A24EJ4DiCp/JCY+aD5xhLorf32UFLWHeVWrX+2r</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABNK3OfA4mqNhfDomE/zWIpwU49Nw3vxVn8pxCrIzEHSgAAAAAOgAAAAAIAACAAAAD9/4FbyW6g48ZOMQsJswuknrQfMjQqF65K/kfEdoDZ9SAAAACAE5SyUg7ACs9WkpNe5GgFwJ4JEQxwRgvHF3+Sp4SaUUAAAACIfqWgLQTgmOsgIrVYU9Rj+QBeV9wY4/VNEw545A6X9jN6+Qb+jWmd/667DpR83ONdbHJwR7UMptBMezkFQp+2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFMX2CRGReDoLaLR6vh5EvSinkhujhr+rK8Rg7Kk3N0AAAAAAOgAAAAAIAACAAAABW3Qr4hbBwjkajkxO4AHNnHvGiBVZfd1R8ri6wfh5vuSAAAABzzfbvQnXx7IyVsrREqa0sON0eJiafXkcrnhV9RAr070AAAAB8aYphdvzeKKepDq0iHrEw5xSTT7oLEtiPOCGw5ovP11A1UxOD2f+f1Ald1Zu9miIZtjfEg9N43s/BryGmtsLr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACD3MnLTOLerNrP116bJlP400LffXDKgM3h7TK45BaEHAAAAAAOgAAAAAIAACAAAABDkm/LC2YyxiW7M+NTKJMND3Z6TcKm7fiatrNN4IiEVyAAAACHtNw1ikKek7YUQsxlQOTXX/+nuDlYwjtJp2J+2mrm+EAAAAAp1L2c7YVNrcegYmFSbXwt1vNrklX6ywYGBtKFhoskvTrfzQfSB0JolwVHL1uP0KxHmJwNolI+zeG+IbHPiOb4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,6 +58,7 @@
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:DTSID="{61C332E2-C47A-469D-A7D7-671A26B1BCE5}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:ForceExecutionResult="0"
       DTS:LocaleID="-1"
       DTS:ObjectName="Crear BikeZ_DW"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
@@ -99,6 +100,7 @@
         <DTS:Executable
           DTS:refId="Package\Dimensión Cliente\Poblar &quot;DIMCliente&quot;"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{207ABEF6-E402-4F86-982A-D857E35A1456}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -663,6 +665,7 @@
         <DTS:Executable
           DTS:refId="Package\Dimensión Empleado\Poblar &quot;DIMEmpleado&quot;"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{FBB1128F-88CD-455A-BECA-9D67202142C6}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -1365,6 +1368,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
         <DTS:Executable
           DTS:refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{29390980-8F80-439D-81BB-93DE799E6989}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -1867,6 +1871,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
         <DTS:Executable
           DTS:refId="Package\Dimensión Territorio\Poblar &quot;DIMTerritorio&quot;"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{dd6b4975-19f7-4b8c-a7e7-c7c56fe85a2f}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -2379,6 +2384,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
         <DTS:Executable
           DTS:refId="Package\Dimensión Tiempo\Poblar &quot;DIMTiempo&quot;"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DelayValidation="True"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{2F652E7C-563F-446F-A26D-0557E442E0D7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -2412,6 +2418,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{42F58DC8-6EF1-49D1-9BAF-8A319133CAC9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:ForceExecutionResult="0"
       DTS:LocaleID="-1"
       DTS:ObjectName="Eliminar BikeZ_DW"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
@@ -2453,6 +2460,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
         <DTS:Executable
           DTS:refId="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{34ACC2EF-50FC-46FF-B77C-C8DE7EA44B03}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -4225,6 +4233,43 @@ where [refTable].[fecha] = ?</property>
           Size="158,42"
           Id="Package\Eliminar BikeZ_DW"
           TopLeft="467.681818181818,106.5" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Tabla Hechos\Crear &quot;HECHOSVentas&quot;"
+          TopLeft="15.6666666666666,13.6666666666667" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;"
+          TopLeft="26.7777777777778,89.2222222222224" />
+        <EdgeLayout
+          Id="Package\Tabla Hechos.PrecedenceConstraints[Constraint]"
+          TopLeft="114.472222222222,55.6666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.5555555555557"
+              Start="0,0"
+              End="0,26.0555555555557">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.0555555555557" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="229,146"
+          Size="229,189"
+          Id="Package\Tabla Hechos"
+          TopLeft="438.722222222223,547.777777777778" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="547.977272727273,243.090909090909">
@@ -4357,43 +4402,6 @@ where [refTable].[fecha] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="199,42"
-          Id="Package\Tabla Hechos\Crear &quot;HECHOSVentas&quot;"
-          TopLeft="15.6666666666666,13.6666666666667" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;"
-          TopLeft="26.7777777777778,89.2222222222224" />
-        <EdgeLayout
-          Id="Package\Tabla Hechos.PrecedenceConstraints[Constraint]"
-          TopLeft="114.472222222222,55.6666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.5555555555557"
-              Start="0,0"
-              End="0,26.0555555555557">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.0555555555557" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="229,146"
-          Size="229,189"
-          Id="Package\Tabla Hechos"
-          TopLeft="438.722222222223,547.777777777778" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="707.5,641.638888888889">
@@ -4423,7 +4431,7 @@ where [refTable].[fecha] = ?</property>
     design-time-name="Package\Dimensión Cliente\Poblar &quot;DIMCliente&quot;">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="223,42"
           Id="Package\Dimensión Cliente\Poblar &quot;DIMCliente&quot;\Transformar y agregar fechas"
@@ -4455,7 +4463,9 @@ where [refTable].[fecha] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4477,7 +4487,9 @@ where [refTable].[fecha] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4701,7 +4713,7 @@ where [refTable].[fecha] = ?</property>
     design-time-name="Package\Dimensión Territorio\Poblar &quot;DIMTerritorio&quot;">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="194,42"
           Id="Package\Dimensión Territorio\Poblar &quot;DIMTerritorio&quot;\Enviar a &quot;DIMTerritorio&quot;"
@@ -4733,7 +4745,9 @@ where [refTable].[fecha] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4755,7 +4769,9 @@ where [refTable].[fecha] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4793,149 +4809,37 @@ where [refTable].[fecha] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="278,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Cargar desde &quot;Ventas&quot; y &quot;DetalleVentas&quot;"
-          TopLeft="119,47" />
+          Size="182,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMProducto"
+          TopLeft="171,338" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMCliente"
+          TopLeft="464,442" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Enviar a &quot;HECHOSVentas&quot;"
+          TopLeft="732,46" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTerritorio"
+          TopLeft="170,442" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMEmpleado"
+          TopLeft="740,439" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Convertir fechas"
+          TopLeft="181,139" />
         <NodeLayout
           Size="175,42"
           Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTiempo"
           TopLeft="176,233" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Convertir fechas"
-          TopLeft="181,139" />
-        <EdgeLayout
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[OLE DB Source Output]"
-          TopLeft="259.25,89">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50"
-              Start="0,0"
-              End="0,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Data Conversion Output]"
-          TopLeft="262,181">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52"
-              Start="0,0"
-              End="0,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMProducto"
-          TopLeft="171,338" />
-        <EdgeLayout
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output]"
-          TopLeft="262.75,275">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63"
-              Start="0,0"
-              End="0,55.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,21.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTerritorio"
-          TopLeft="170,442" />
-        <EdgeLayout
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output1]"
-          TopLeft="261.5,380">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62"
-              Start="0,0"
-              End="0,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,21.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMCliente"
-          TopLeft="464,442" />
-        <EdgeLayout
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output2]"
-          TopLeft="352,463">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="112,0"
-              Start="0,0"
-              End="104.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="104.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="4.05861328125,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMEmpleado"
-          TopLeft="740,439" />
+          Size="278,42"
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Cargar desde &quot;Ventas&quot; y &quot;DetalleVentas&quot;"
+          TopLeft="119,47" />
         <EdgeLayout
           Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output3]"
           TopLeft="637,461.5">
@@ -4960,10 +4864,126 @@ where [refTable].[fecha] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="211,42"
-          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Enviar a &quot;HECHOSVentas&quot;"
-          TopLeft="732,46" />
+        <EdgeLayout
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output2]"
+          TopLeft="352,463">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="112,0"
+              Start="0,0"
+              End="104.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="104.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.05861328125,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output1]"
+          TopLeft="261.5,380">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,21.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output]"
+          TopLeft="262.75,275">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,21.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Data Conversion Output]"
+          TopLeft="262,181">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[OLE DB Source Output]"
+          TopLeft="259.25,89">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;.Paths[Lookup Match Output4]"
           TopLeft="835.75,439">
@@ -4992,48 +5012,12 @@ where [refTable].[fecha] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Cargar desde &quot;Ventas&quot; y &quot;DetalleVentas&quot;">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTiempo">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DIMTiempo]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMProducto">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -5043,30 +5027,7 @@ where [refTable].[fecha] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTerritorio">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DIMTerritorio]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5079,7 +5040,7 @@ where [refTable].[fecha] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -5089,7 +5050,43 @@ where [refTable].[fecha] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Enviar a &quot;HECHOSVentas&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTerritorio">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIMTerritorio]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5102,7 +5099,7 @@ where [refTable].[fecha] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -5112,7 +5109,7 @@ where [refTable].[fecha] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5120,7 +5117,30 @@ where [refTable].[fecha] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Enviar a &quot;HECHOSVentas&quot;">
+    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Lookup DIMTiempo">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIMTiempo]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tabla Hechos\Poblar &quot;HECHOSVentas&quot;\Cargar desde &quot;Ventas&quot; y &quot;DetalleVentas&quot;">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
