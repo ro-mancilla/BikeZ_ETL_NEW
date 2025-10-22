@@ -9,10 +9,11 @@
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5467.0"
   DTS:LocaleID="13322"
+  DTS:MaxErrorCount="5"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="88"
-  DTS:VersionGUID="{B836E615-7EBF-4905-99CE-A09EC953753A}">
+  DTS:VersionBuild="92"
+  DTS:VersionGUID="{20E8D20F-6FE2-4970-A7C7-7B6DA8FF59D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +26,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABNK3OfA4mqNhfDomE/zWIpwU49Nw3vxVn8pxCrIzEHSgAAAAAOgAAAAAIAACAAAAD9/4FbyW6g48ZOMQsJswuknrQfMjQqF65K/kfEdoDZ9SAAAACAE5SyUg7ACs9WkpNe5GgFwJ4JEQxwRgvHF3+Sp4SaUUAAAACIfqWgLQTgmOsgIrVYU9Rj+QBeV9wY4/VNEw545A6X9jN6+Qb+jWmd/667DpR83ONdbHJwR7UMptBMezkFQp+2</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABq1lDautSOVfagtkZrK/VJ/1XaAo1FJnwce4RpJfT3OgAAAAAOgAAAAAIAACAAAABXaGx3n43nLY0ePVmpLGdhafs6wRP+frhgSd1p3mJmbCAAAAAtAuEoHBG2x5SJY8lxaMzCbe4Haw4YS2UprJo5ITPj2UAAAAASyVeRgf9i+5SwFzAKHW9u/jg8B/PDUZn24YiUa8nuklqEILSNcGM1Yila7hHlOZ0rZgNjOa9kfIIDfoBeJZU6</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +43,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACD3MnLTOLerNrP116bJlP400LffXDKgM3h7TK45BaEHAAAAAAOgAAAAAIAACAAAABDkm/LC2YyxiW7M+NTKJMND3Z6TcKm7fiatrNN4IiEVyAAAACHtNw1ikKek7YUQsxlQOTXX/+nuDlYwjtJp2J+2mrm+EAAAAAp1L2c7YVNrcegYmFSbXwt1vNrklX6ywYGBtKFhoskvTrfzQfSB0JolwVHL1uP0KxHmJwNolI+zeG+IbHPiOb4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABaDYybaIM1trgaI8VpQUFjYZyk8d+0x7DkCDzQXIV1sAAAAAAOgAAAAAIAACAAAADg2bEJas/tqGhIkHmWeMH8nciWgU/WJI/pad6YKHETwCAAAACOaJy7AmrFhL7NRkA/yjV8Sh9cgPeaJIEs6gLWD6IE50AAAABkYJtBv8y5xZPCduRNPV5rG9RKfJ2Wv+y+RJBDGx35WG2CCR7A+o9O4JveaG2vFUhF/myH2WZtaAv0Kobqcbmj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
