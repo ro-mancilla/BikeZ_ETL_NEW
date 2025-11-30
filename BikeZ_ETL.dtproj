@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VIAWSE02LC1220</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAACAAAAAAAQZgAAAAEAACAAAAAto0nMhwOrYR8qx0HjQ0ZS8JbjmfPHuhQXE+BZcIxxIAAAAAAOgAAAAAIAACAAAAAN0WpIh4jqnKXHgv07GHGWym5ZNsd8Xvkkf5yKmwnWj5AAAACEGVzRhOs5srq/Lk43zB7r7aON70mDVA6UN1rEpBov66kpbFHG5pVb4beOjYoyEbl4bSxlpRqXsxZRj75MxVtJBGBtfW7u6r8HdY01sM1IumZh92iTcPvcBCoyEctt/UFfdFfUH4xvmkcmvjkVuIhazlGZ386POt1oimMyCvXh/Ryg7fK8hFFKDr6P7fH8pztAAAAA9usCMMW1ayqf77H/+d+A/4Thy6pDWcpFengSPmBvlSlyd10AO+RTtBQGdwMBGjrnG813ik4wSaS81IUGyijrOA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAACAAAAAAAQZgAAAAEAACAAAADjQ6zgE+Hehgr8iEaENoPcc++yQszhH2AneKc3GePX2QAAAAAOgAAAAAIAACAAAAC1IWnsMr+KL4v8zUKW/lE3yoz0FKYiwcc48yfM6GE9DZAAAACYZFTQILbdAzzwWuMTI/jXZ9UHuIHpeTJOXJzBlXpg+f+yUcMX0AmBn7Z0Iw5oGikXrcCWn4PvNLz9lfWX/vas41t+ZCATs2nPSQyscGU9HRR9G5rPF4iiB9chBOSgJiWLftzJb7k7BIU5y3EqQSUEtuPQtpLTHaNkhuYGbzccaO7jsU6tE8i+ZfKggKJ2joZAAAAAlhl+ANeEMfHE8zGY/0gX0ETzt8tWdr8Uza5pnghxJEr5NnaTjnxpy9znYHEd8Vp6nl44XwrT+YRBzZ5bX+iVLA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">91</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">94</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6C66965D-5C9D-4930-B2AD-52C05B215220}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{73419AC8-8260-4234-B819-470CDC2A03B4}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Komari;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -182,7 +182,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">192.168.1.91</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Komari</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -227,7 +227,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Komari;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -331,7 +331,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">192.168.1.91</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Komari</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

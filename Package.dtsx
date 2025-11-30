@@ -12,8 +12,8 @@
   DTS:MaxErrorCount="5"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="92"
-  DTS:VersionGUID="{20E8D20F-6FE2-4970-A7C7-7B6DA8FF59D1}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{93667EE9-20EB-4806-8BC1-48BE2F000900}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,11 +26,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;">
+          DTS:ConnectionString="Data Source=Komari;User ID=sa;Initial Catalog=BikeZ_DB;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{B77D45A6-6357-4A3C-A16A-273193CFF8A7}192.168.1.91.BikeZ_DB.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABq1lDautSOVfagtkZrK/VJ/1XaAo1FJnwce4RpJfT3OgAAAAAOgAAAAAIAACAAAABXaGx3n43nLY0ePVmpLGdhafs6wRP+frhgSd1p3mJmbCAAAAAtAuEoHBG2x5SJY8lxaMzCbe4Haw4YS2UprJo5ITPj2UAAAAASyVeRgf9i+5SwFzAKHW9u/jg8B/PDUZn24YiUa8nuklqEILSNcGM1Yila7hHlOZ0rZgNjOa9kfIIDfoBeJZU6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8hLq33LTUkuQzpk/0Q/ZCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA6lphcmkhVhNHNAGewqlDsowvnMCLwm192Efusn+89ZgAAAAAOgAAAAAIAACAAAAATFA+ZKW26Sft+CpoSWi/7Cu93YRynVA1zGB/RHtxkQSAAAADHkAQiAaudYaGrcBTDX/kbO1GiIbcuJh0yzhZHvWX770AAAAA2u8cEiKGmNKUnoJcMb7mWuonLvtDiV0O1wUmQocV8HZaEOU9S8D8lm0hZKaucJSH2wkc6CSCh1D9tVg3jQuO5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -43,11 +43,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.1.91;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;">
+          DTS:ConnectionString="Data Source=Komari;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{73E5E121-2845-47B2-963A-76D6484BDC45}192.168.1.91.BikeZ_DW.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/Y7hgXP2tU2bPuWvv2zutQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABaDYybaIM1trgaI8VpQUFjYZyk8d+0x7DkCDzQXIV1sAAAAAAOgAAAAAIAACAAAADg2bEJas/tqGhIkHmWeMH8nciWgU/WJI/pad6YKHETwCAAAACOaJy7AmrFhL7NRkA/yjV8Sh9cgPeaJIEs6gLWD6IE50AAAABkYJtBv8y5xZPCduRNPV5rG9RKfJ2Wv+y+RJBDGx35WG2CCR7A+o9O4JveaG2vFUhF/myH2WZtaAv0Kobqcbmj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8hLq33LTUkuQzpk/0Q/ZCgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB91P12Ktez+pkVSAOqwyvAdTl7Gu37q1zuNuROeq6BYQAAAAAOgAAAAAIAACAAAACNzmAJrzgC1meZUgUPvLEdd43jiP4SxVS1SIpx3xhwSiAAAABW6lOEjOxgx3LeBv2ZuWK6gjJt5s4LFjotf21vEJItkUAAAAD+/P4FqF8pmtLmj7byDmgcPhQE57Jm8hVIMcLT6CtVOTGzMqzL8/i9umIvZIPAf6lJE5yAWHm0LWn7gtRFanrW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1501,7 +1501,13 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
+    p.ProductoID,
+    p.Producto,
+    p.Color,
+    ISNULL(c.Categoria, 'Sin Categoría') as Categoria
+FROM Productos p
+LEFT JOIN Categorias c ON p.CategoriaID = c.CategoriaID</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1518,7 +1524,7 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">2</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
@@ -1567,13 +1573,14 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                           name="Color"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[CategoriaID]"
-                          dataType="i4"
+                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[Categoria]"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].ExternalColumns[CategoriaID]"
-                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[CategoriaID]"
-                          name="CategoriaID"
+                          externalMetadataColumnId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].ExternalColumns[Categoria]"
+                          length="50"
+                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[Categoria]"
+                          name="Categoria"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -1593,9 +1600,10 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                           length="15"
                           name="Color" />
                         <externalMetadataColumn
-                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].ExternalColumns[CategoriaID]"
-                          dataType="i4"
-                          name="CategoriaID" />
+                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].ExternalColumns[Categoria]"
+                          dataType="wstr"
+                          length="50"
+                          name="Categoria" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -1621,10 +1629,11 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                           lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[Color]"
                           name="Color" />
                         <outputColumn
-                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[CategoriaID]"
-                          dataType="i4"
-                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[CategoriaID]"
-                          name="CategoriaID" />
+                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[Categoria]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[Categoria]"
+                          name="Categoria" />
                         <outputColumn
                           refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -1747,11 +1756,12 @@ LEFT JOIN Paises p ON t.PaisID = p.PaisID</property>
                           externalMetadataColumnId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Enviar a &quot;DIMProducto&quot;.Inputs[OLE DB Destination Input].ExternalColumns[producto_color]"
                           lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[Color]" />
                         <inputColumn
-                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Enviar a &quot;DIMProducto&quot;.Inputs[OLE DB Destination Input].Columns[CategoriaID]"
-                          cachedDataType="i4"
-                          cachedName="CategoriaID"
+                          refId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Enviar a &quot;DIMProducto&quot;.Inputs[OLE DB Destination Input].Columns[Categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Categoria"
                           externalMetadataColumnId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Enviar a &quot;DIMProducto&quot;.Inputs[OLE DB Destination Input].ExternalColumns[producto_categoria]"
-                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[CategoriaID]" />
+                          lineageId="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;.Outputs[OLE DB Source Output].Columns[Categoria]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4620,65 +4630,61 @@ where [refTable].[fecha] = ?</property>
     design-time-name="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="194,42"
           Id="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Enviar a &quot;DIMProducto&quot;"
-          TopLeft="513,328" />
+          TopLeft="520,371" />
         <NodeLayout
           Size="153,42"
           Id="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Agregar fechas"
-          TopLeft="533,212" />
+          TopLeft="539,233" />
         <NodeLayout
           Size="206,42"
           Id="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;\Cargar desde &quot;Productos&quot;"
           TopLeft="506,104" />
         <EdgeLayout
           Id="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;.Paths[OLE DB Source Output]"
-          TopLeft="609.25,146">
+          TopLeft="612.25,146">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66"
+              EndConnector="0,87"
               Start="0,0"
-              End="0,58.5">
+              End="0,79.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.5" />
+                    End="0,79.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Dimensión Producto\Poblar &quot;DIMProducto&quot;.Paths[Derived Column Output]"
-          TopLeft="609.75,254">
+          TopLeft="616.25,275">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,74"
+              EndConnector="0,96"
               Start="0,0"
-              End="0,66.5">
+              End="0,88.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.5" />
+                    End="0,88.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
