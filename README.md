@@ -2,7 +2,7 @@
 <img width="727" height="582" alt="image" src="https://github.com/user-attachments/assets/55fdc35f-e506-4c2c-b1cf-bb0b64ea8f64" />
 
 ### SELECT DIMProducto
-<img width="644" height="382" alt="image" src="https://github.com/user-attachments/assets/985d8a37-7d85-44ae-a7e6-5f56ff6541a9" />
+<img width="637" height="379" alt="image" src="https://github.com/user-attachments/assets/c84b61c3-36ce-494d-a180-a4833c7ba96b" />
 
 ### SELECT DIMCliente
 <img width="583" height="376" alt="image" src="https://github.com/user-attachments/assets/8f533ebf-7cf8-4072-ada0-6f740c071752" />
